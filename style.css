@@ -9,3 +9,68 @@ body {
 h1 {
 	text-align: center;
 }
+
+h2 {
+	text-align: center;
+}
+
+p {
+	text-align: center;
+}
+
+.tym {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.osoba {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	border: 1px solid rgb(170, 168, 168);
+	border-radius: 16px;
+	padding: 15px;
+	flex-direction: column;
+	margin-bottom: 20px;
+	box-shadow: 0 3px 3px #B5DDEC
+}
+
+.foto img {
+	border-radius: 50%;
+}
+
+/*tablet*/
+@media (min-width: 600px) and (max-width: 960px) {
+.tym {
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.osoba {
+	width: calc((100% - 20px) / 2);
+	flex-direction: row;
+}
+h2 {
+	text-align: left;
+}
+p {
+	text-align: left;
+	overflow: hidden;
+}
+img {margin-right: 20px;
+
+}
+}
+
+/*screen*/
+@media (min-width: 960px) {
+.tym {
+	flex-direction: row;
+}
+.osoba {
+	width: calc((100% - 60px) / 4);
+}
+}
+
+
+/*udělat posun až ve chvíli, kdy to bude vidět, nebo zmenšit fotku, aby se to vedle sebe lépe vešlo
